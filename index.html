@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Mafia | Rasmiy Sayt</title>
+    <link rel="icon" type="images/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome piktogrammalar uchun -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Legacy Mafia Logo" class="logo-img">
+            LEGACY <span>MAFIA</span>
+        </div>
+        
+
+        <!-- Menyu ro'yxati -->
+        <ul class="nav-links" id="menu-list">
+            <li class="reveal"><a href="#hero">Bosh sahifa</a></li>
+            <li class="reveal"><a href="#roles">Rollar</a></li>
+            <li class="reveal"><a href="#rules">Qoidalar</a></li>
+            <li class="reveal"><a href="#" class="btn-small">Botni ochish</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+        <video autoplay muted loop id="bg-video">
+        <source src="images/mafia.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Omon qolish uchun <br>kurash o'yini...</h1>
+            <p>LEGACY Mafiya boti bilan strategiya va psixologiya olamiga sho'ng'ing. Guruhdagi eng kuchli kimligini isbotlang!</p>
+            <div class="hero-btns">
+                <a href="https://t.me/legacymafia_bot" class="btn-primary">Botni ishga tushirish</a>
+                <a href="https://t.me/abdugafforo_v" class="btn-secondary">Hamkorlik qilish</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="roles" class="section">
+        <h2 class="section-title">O'yin Qahramonlari</h2>
+        <div class="roles-modern-grid">
+            
+            <!-- Tinch aholi -->
+            <div class="role-box" data-team="civilian">
+                <div class="role-header">
+                    <span class="role-emoji">👨🏼</span>
+                    <h3>Tinch aholi</h3>
+                </div>
+                <p>O'yinning asosiy qahramonlari. Yashirinib qolish va mafiyani aniqlashga yordam berish ularning burchidir.</p>
+                <div class="role-footer">Maxsus qobiliyat: Yo'q</div>
+            </div>
+
+            <!-- Komissar -->
+            <div class="role-box" data-team="civilian">
+                <div class="role-header">
+                    <span class="role-emoji">🕵️</span>
+                    <h3>Komissar</h3>
+                </div>
+                <p>Har kecha bir kishini tekshiradi. Uning ma'lumotlari tinch aholi uchun eng qimmatli manba hisoblanadi.</p>
+                <div class="role-footer">Maxsus qobiliyat: Tekshirish</div>
+            </div>
+
+            <!-- Mafiya -->
+            <div class="role-box" data-team="mafia">
+                <div class="role-header">
+                    <span class="role-emoji">🤵🏼</span>
+                    <h3>Mafiya</h3>
+                </div>
+                <p>Asosiy antagonistlar. Har kecha bir kishini o'ldirish orqali barcha tinch aholini yo'q qilishni ko'zlaydi.</p>
+                <div class="role-footer">Maxsus qobiliyat: Qotillik</div>
+            </div>
+
+            <!-- Shifokor -->
+            <div class="role-box" data-team="civilian">
+                <div class="role-header">
+                    <span class="role-emoji">👨‍⚕️</span>
+                    <h3>Shifokor</h3>
+                </div>
+                <p>Har kecha bir kishini davolash imkoniyatiga ega. Mafiya hujumidan omon qolishning yagona chorasi.</p>
+                <div class="role-footer">Maxsus qobiliyat: Davolash</div>
+            </div>
+
+            <!-- Don -->
+            <div class="role-box" data-team="mafia">
+                <div class="role-header">
+                    <span class="role-emoji">👑</span>
+                    <h3>Don</h3>
+                </div>
+                <p>Mafiya yetakchisi va boshqaruvchisi. Mafiya g'alabasi uchun strategik qarorlar qabul qiladi.</p>
+                <div class="role-footer">Maxsus qobiliyat: Boshqaruv</div>
+            </div>
+
+            <!-- Mashuqa -->
+            <div class="role-box" data-team="mafia">
+                <div class="role-header">
+                    <span class="role-emoji">💃</span>
+                    <h3>Mashuqa</h3>
+                </div>
+                <p>Shaharni zararsizlantirish ustasi. Uning asosiy maqsadi Komissarni o'z jozibasi bilan chalg'itish.</p>
+                <div class="role-footer">Maxsus qobiliyat: Chalg'itish</div>
+            </div>
+
+            <!-- Serjant -->
+            <div class="role-box" data-team="civilian">
+                <div class="role-header">
+                    <span class="role-emoji">🪖</span>
+                    <h3>Serjant</h3>
+                </div>
+                <p>Komissarning o'ng qo'li. Agar komissar vafot etsa, barcha vazifalar Serjantning zimmasiga o'tadi.</p>
+                <div class="role-footer">Maxsus qobiliyat: O'rinbosar</div>
+            </div>
+
+            <!-- Advokat -->
+            <div class="role-box" data-team="mafia">
+                <div class="role-header">
+                    <span class="role-emoji">👨‍⚖️</span>
+                    <h3>Advokat</h3>
+                </div>
+                <p>Mafiyani himoya qiladi. U tanlagan shaxs Komissar ko'ziga "Tinch aholi" bo'lib ko'rinadi.</p>
+                <div class="role-footer">Maxsus qobiliyat: Himoya</div>
+            </div>
+
+            <!-- Daydi -->
+            <div class="role-box" data-team="neutral">
+                <div class="role-header">
+                    <span class="role-emoji">🧙‍♂️</span>
+                    <h3>Daydi</h3>
+                </div>
+                <p>Tungi guvoh. Shisha butilka qidirib yurib, tunda sodir bo'layotgan qotilliklarni ko'rib qoladi.</p>
+                <div class="role-footer">Maxsus qobiliyat: Guvohlik</div>
+            </div>
+
+        </div>
+    </section>
+    <section id="rules" class="section rules-section">
+    <div class="rules-container">
+        <h2 class="section-title">O'yin Qoidalari</h2>
+        <p class="warning-box">
+            Tartibni buzgan o'yinchilar botdan chetlatilishi mumkin!
+        </p>
+        <div class="rules-grid">
+            <div class="rule-item">
+                <div class="rule-number">01</div>
+                <div class="rule-text">
+                    <h3>Shaxsiy daxlsizlik</h3>
+                    <p>O'yinchilarning shaxsiy profiliga (LS) o'yin yuzasidan yozish yoki ularni bezovta qilish qat'iyan man etiladi.</p>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">02</div>
+                <div class="rule-text">
+                    <h3>Sadoqat tamoyili</h3>
+                    <p>O'yin paytida o'z sheriklarini sotish, ularni guruhda oshkor qilish yoki atayin yutqazish taqiqlanadi.</p>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">03</div>
+                <div class="rule-text">
+                    <h3>O'zaro hurmat</h3>
+                    <p>Guruhda boshqa ishtirokchilarni so'kish, haqorat qilish yoki kamsituvchi so'zlarni ishlatish taqiqlanadi.</p>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">04</div>
+                <div class="rule-text">
+                    <h3>Adolatli o'yin</h3>
+                    <p>Har xil turdagi skrinshotlar orqali o'z rolini isbotlashga urinish o'yin qoidalariga zid hisoblanadi.</p>
+                </div>
+            </div>
+
+            <div class="rule-item">
+                <div class="rule-number">05</div>
+                <div class="rule-text">
+                    <h3>Reklama taqiqi</h3>
+                    <p>Guruh ichida boshqa botlar, kanallar yoki begona havolalarni tarqatish (spam) mumkin emas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <!-- Mafia mavzusiga mos ikonka -->
+            <i class="fa-solid fa-user-secret"></i> LEGACY <span>MAFIYA</span>
+        </div>
+        <p>Guruhlar uchun maxsus, interaktiv mafiya bot loyihasi.</p>
+        
+        <div class="footer-socials">
+            <a href="https://legacymafia_bot" target="_blank" class="social-link">
+                <i class="fa-brands fa-telegram"></i> Telegram Bot
+            </a>
+            <a href="https://t.me/kyberphp_py" target="_blank" class="social-link">
+                <i class="fa-solid fa-bullhorn"></i> Kanalimiz
+            </a>
+            <a href="https://t.me/abdugafforo_v" target="_blank" class="social-link">
+                <i class="fa-solid fa-circle-question"></i> Yordam
+            </a>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2026 Legacy Mafiya. Barcha huquqlar himoyalangan.
+        </div>
+    </div>
+    </footer>
+
+    <script src="styles/style.js"></script>
+</body>
+</html>
